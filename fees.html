@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduStatus</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="h-50">
+        <nav class="bg-black text-white p-3 flex items-center justify-between shadow-xl sticky top-0 z-10 h-100">
+            <h1 class="text-3xl">EduStatus</h1>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 h-6 w-6 md:hidden ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </nav>
+    </div>
+
+    <!-- form -->
+
+    <div class="container max-w-screen-lg mx-auto mt-10 mb-10">
+        <div>
+
+            <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+                <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+                    <div class="text-gray-600">
+                        <p class="font-medium text-lg">Personal Details</p>
+                        <p>Please fill out all the fields.</p>
+                    </div>
+
+                    <div class="lg:col-span-2">
+                        <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+                            <div class="md:col-span-5">
+                                <label for="full_name">Full Name</label>
+                                <input type="text" name="full_name" id="full_name"
+                                    class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value=""
+                                    placeholder="Enter Your name" />
+                            </div>
+
+                            <div class="md:col-span-5">
+                                <label for="email">Roll Number</label>
+                                <input type="text" name="email" id="email"
+                                    class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
+                            </div>
+
+                            <div class="md:col-span-3">
+                                <label for="address">Registration Number</label>
+                                <input type="text" name="address" id="address"
+                                    class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
+                            </div>
+
+                            <div class="md:col-span-2">
+                                <label for="city">Course Name</label>
+                                <input type="text" name="city" id="city"
+                                    class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="" />
+                            </div>
+
+                            <div class="md:col-span-2">
+                                <label>Department</label>
+                                <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
+                                    <input name="country" id="country"
+                                        class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
+                                        value="" />
+                                    <button tabindex="-1"
+                                        class="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600">
+                                        <svg class="w-4 h-4 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                                        </svg>
+                                    </button>
+                                    <button tabindex="-1" for="show_more"
+                                        class="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-300 hover:text-blue-600">
+                                        <svg class="w-4 h-4 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="18 15 12 9 6 15"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+
+
+                            <div class="md:col-span-5">
+                                <div class="inline-flex items-center">
+                                    <input type="checkbox" name="billing_same" id="billing_same"
+                                        class="form-checkbox" />
+                                    <label for="billing_same" class="ml-2">Above Mentioned details are
+                                        correct</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="md:col-span-5 text-right">
+                                <div class="inline-flex items-end">
+                                    <a href="submit.html">
+                                        <button
+                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit
+                                        </button>
+                                        <a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer class="font-sans tracking-wide bg-black py-10 px-12 mt-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12">
+            <div>
+                <h4 class="text-white text-lg font-semibold mb-6">Company</h4>
+                <ul class="space-y-5">
+                    <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-[15px]">About Us</a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-[15px]">Contact</a></li>
+                    <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-[15px]">Careers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white text-lg font-semibold mb-6">Information</h4>
+                <ul class="space-y-5">
+                    <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-[15px]">Privacy
+                            Policy</a></li>
+                    <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-[15px]">Terms of
+                            Service</a></li>
+
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white text-lg font-semibold mb-6">Help</h4>
+                <ul class="space-y-5">
+                    <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-[15px]">FAQs</a></li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+        <p class='text-gray-300 text-right text-[15px] mt-8'>© EduStatus. All rights reserved.
+        </p>
+    </footer>
+
+
+</body>
